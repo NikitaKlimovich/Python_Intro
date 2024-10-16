@@ -7,23 +7,14 @@ repos:
 
 
 
-  - id: isort
-    name: isort
-    entry: isort
-    language: system
-    types: [python]
-    args: [
-        --include_trailing_comma=true,
-        --line_length=80,
-        --lines_after_imports=2,
-        ]
-  
-
   - id: black
     name: black
     entry: black
     language: system
     types: [python]
+    args: [
+            --line-length=80
+        ]
 
 
 
