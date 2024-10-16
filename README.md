@@ -9,7 +9,6 @@ query3: 5 rooms with the biggest difference in the age of students
 query4: List of rooms where students of different sexes live
 
 To run this app use command:
-
 ./run.sh -r [path_rooms] -s [path_students] -f [format]
 
 [path_rooms]  - path to file rooms.json
