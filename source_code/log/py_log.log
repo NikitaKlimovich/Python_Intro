@@ -1,0 +1,9 @@
+2024-10-16 11:51:47,520 INFO Successfully connected to database
+2024-10-16 11:51:47,536 INFO Query create database rs_db is not running: the entity is already exists
+2024-10-16 11:51:47,573 INFO Query 
+
+create index idx_r_name on room (r_name) is not running: the entity is already exists
+2024-10-16 11:51:47,579 INFO Query 
+create index idx_s_birthday on student (s_birthday) is not running: the entity is already exists
+2024-10-16 11:51:47,611 INFO Successfully created necessary entities
+2024-10-16 11:51:47,687 INFO Successfully created necessary entities

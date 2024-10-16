@@ -1,0 +1,6 @@
+mysql
+dict2xml
+pre-commit
+black
+isort
+flake8

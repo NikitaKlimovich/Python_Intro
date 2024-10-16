@@ -1,0 +1,35 @@
+- repo: local
+  
+  
+  
+  hooks:
+
+
+
+  -   id: isort
+      name: isort
+      entry: isort --settings-file ./.isort.cfg .
+      language: system
+      types: [python]
+      args: [
+              --include_trailing_comma=true
+              --line_length=80
+              --lines_after_imports=2
+              ]
+  
+
+  -   id: black
+      name: black
+      entry: black --config ./.black . 
+      language: system
+      types: [python]
+
+
+
+  -   id: flake8
+      name: flake8
+      entry: flake8 --config ./.flake8 . 
+      language: system
+      types: [python]
+
+
