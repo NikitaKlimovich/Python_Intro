@@ -5,21 +5,28 @@ repos:
   
   hooks:
 
-  - id: isort
-    name: isort
-    entry: isort --settings-file ./.isort.cfg .
-    language: system
-    types: [python]
 
   - id: black
     name: black
     entry: black
     language: system
     types: [python]
+    exclude: python_intro_env/.*|main.py
     args: [
-            --line-length=80
+            --line-length=100
         ]
 
+
+
+
+  - id: isort
+    name: isort
+    entry: isort --settings-file ./.isort.cfg .
+    language: system
+    types: [python]
+    exclude: python_intro_env/.*
+
+  
 
 
   - id: flake8
@@ -27,6 +34,7 @@ repos:
     entry: flake8
     language: system
     types: [python]
+    exclude: python_intro_env/.*
 
 
   

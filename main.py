@@ -2,12 +2,8 @@ import configparser
 
 from source_code.arg_parser import ArgParserManager
 from source_code.data_writer import DataWriter
-from source_code.db_manager import (
-    DatabaseManager,
-    DataLoader,
-    DataSelector,
-    SchemaManager,
-)
+from source_code.db_manager import (DatabaseManager, DataLoader, DataSelector,
+                                    SchemaManager)
 
 
 def get_config():
@@ -51,9 +47,7 @@ Choose a query: 1, 2, 3 or 4 or print 0 to exit\n"""
         file_paths = (args.r, args.s)
         output_format = args.f
     else:
-        print(
-            "Not valid input arguments, check log file to get more information"
-        )
+        print("Not valid input arguments, check log file to get more information")
         return 0
     schema_manager.create()
     for file_path in file_paths:
