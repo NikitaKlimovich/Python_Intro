@@ -5,7 +5,7 @@ import os
 
 logging.basicConfig(
     level=logging.INFO,
-    filename="source_code//log//py_log.log",
+    filename="log//py_log.log",
     filemode="w",
     format="%(asctime)s %(levelname)s %(message)s",
 )
@@ -15,9 +15,7 @@ class ArgParserManager:
     def __init__(self):
         self.parser = argparse.ArgumentParser()
         self.is_valid = True
-        self.parser.add_argument(
-            "-r", metavar="rooms_file_path", help="Path to file rooms.json"
-        )
+        self.parser.add_argument("-r", metavar="rooms_file_path", help="Path to file rooms.json")
         self.parser.add_argument(
             "-s",
             metavar="students_file_path",
