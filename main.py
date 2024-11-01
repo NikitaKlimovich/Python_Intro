@@ -1,9 +1,9 @@
 import configparser
 
-from source_code.arg_parser import ArgParserManager
-from source_code.data_writer import DataWriter
-from source_code.db_manager import (DatabaseManager, DataLoader, DataSelector,
-                                    SchemaManager)
+from src.arg_parser import ArgParserManager
+from src.data_writer import DataWriter
+from src.db_manager import (DatabaseManager, DataLoader, DataSelector,
+                            SchemaManager)
 
 
 def get_config():

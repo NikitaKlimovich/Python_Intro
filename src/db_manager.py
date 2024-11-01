@@ -54,9 +54,7 @@ class SchemaManager:
                 mysql.connector.errors.ProgrammingError,
                 mysql.connector.errors.DatabaseError,
             ):
-                logging.info(
-                    f"Query {query} is not running: the entity is already exists"
-                )
+                logging.info(f"Query {query} is not running: the entity is already exists")
 
 
 class DataLoader:
@@ -86,6 +84,4 @@ class DataSelector:
 
     def select_info(self, q_num):
         sql_select = self.db_manager.read_sql("select.sql")[q_num]
-        return self.db_manager.execute_query(
-            sql_select, dict_bool=True
-        ).fetchall()
+        return self.db_manager.execute_query(sql_select, dict_bool=True).fetchall()
